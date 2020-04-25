@@ -12,6 +12,9 @@ int main()
 
 
     cout<<"value is at position: "<<(it-v.begin());
+    /* another way u like most:  
+    cout<<"value is at position: "<<distance(v.begin(),it);
+   */
 
     cout<<endl;
 }
