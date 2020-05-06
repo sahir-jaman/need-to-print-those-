@@ -1,4 +1,8 @@
 // find unique in map
+
+this is the first process where u did it through input values  and below down there is another process where u did it without input
+values ;  :)
+
 // the map::count() function 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -30,3 +34,41 @@ int main()
 
 	return 0; 
 } 
+
+// second process without input values ;
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    map<string,int>m;
+    map<string,int>:: iterator it;
+    int n;
+    while(n--)
+    {
+        int n;
+        cin >> n;
+
+        map<string, int> database;
+        string s;
+        while (n--)
+        {
+            cin >> s;
+            if (database.count(s) == 0)
+            {
+                cout << "OK" << endl;
+                database[s] = 1;
+            }
+            else
+            {
+                cout << s << database[s] << endl;
+                database[s] += 1;
+            }
+        }
+        return 0;
+
+    }
+
+}
+
+
