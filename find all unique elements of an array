@@ -1,4 +1,5 @@
-// C++ program to demonstrate the use of std::unique
+// C++ program to demonstrate(প্রদরশন) the use of std::unique
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
