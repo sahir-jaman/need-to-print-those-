@@ -1,4 +1,6 @@
-             /* You can follow the other rule which is
+//Delete duplicate elements from an array
+
+           /* You can follow the other rule which is
                      1.sort the array 
                      2.delete side of side like--- if (ar[i]==ar[i+1]) then delete it;
             */
