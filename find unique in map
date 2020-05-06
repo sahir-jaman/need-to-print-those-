@@ -1,4 +1,4 @@
-// C++ program to illustrate 
+// find unique in map
 // the map::count() function 
 #include <bits/stdc++.h> 
 using namespace std; 
