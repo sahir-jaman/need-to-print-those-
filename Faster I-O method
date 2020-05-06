@@ -1,3 +1,5 @@
+//Faster I-O method 
+
 In competative programming it is common that, we have to use Faster I/O method. Which means we have to use scanf and printf in the program.
 But it is really uncomfortable to use scanf,printf instead cin,cout. so to avoid this problem .. we can use two line in the main funtion.
 Then we can use cin,cout and having no problem.more significally no time error will hapen if i use cin,cout. 
