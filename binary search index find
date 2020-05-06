@@ -1,3 +1,5 @@
+//binary search index find
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
