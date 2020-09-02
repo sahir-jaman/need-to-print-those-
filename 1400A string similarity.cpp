@@ -17,3 +17,9 @@ int main()
 
     return 0;
 }
+
+question : 
+
+https://codeforces.com/problemset/problem/1400/A
+
+fact to uknderstand :: here we took a string p then assign it's value n and printing charecter which is at n-1 position of string s;
