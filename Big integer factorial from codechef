@@ -1,0 +1,50 @@
+// code-chef small factorials (biginner);
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    int q=2;
+    int arr[10000]= {0};       // initializing all array values as 0;
+    arr[0]=1;
+    int x=0;
+    int num=0;
+    int len=1;                // length of the present array elements;
+
+    while(q<=n)
+    {
+        x=0;
+        while(x<len)
+        {
+            arr[x]=arr[x]*q;
+            arr[x]=arr[x]+num;
+            num=arr[x]/10;
+            arr[x]=arr[x]%10;
+            x++;
+        }
+        while(num!=0)
+        {
+            arr[len]=num%10;
+            num=num/10;
+            len++;
+        }
+        q++;
+    }
+    len=len-1;
+    while(len>=0)
+    {
+       cout<<arr[len];
+       len--;
+    }
+
+    return 0;
+}
+
+
+
+link of the learning source : https://www.youtube.com/watch?v=2fYZERB2Yng
+link of the problem source  : https://www.codechef.com/problems/FCTRL2 
