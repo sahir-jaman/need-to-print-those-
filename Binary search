@@ -93,3 +93,8 @@ int main()
     return 0;
 }
 
+
+// learn shortcuts library function of Binary search && Lower Bound + upper bound 
+
+link :  https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/
+
