@@ -1,0 +1,95 @@
+// if u don't know the bound or don't know where to stop .&&. Learning link : https://codeforces.com/blog/entry/9901
+// u can also use it in every where . it is so fast and easy to implement
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void Search(int x[], int n, int k)
+{
+    int p = 0;
+    for (int i = n; i >= 1; i /= 2)
+    {
+        while (p+i < n && x[p+i] <= k)
+        {
+            p += i;
+        }
+    }
+    if(x[p]==k)
+    {
+        cout<<"yes at "<<p<<" index"<<endl;
+        return;
+    }
+    else
+    {
+        cout<<"Not found"<<endl;
+        return;
+    }
+}
+
+int main()
+{
+    int x[5]= {10,20,30,40,50};
+    int k;
+    cin>>k;
+    Search(x,5,k);
+    return 0;
+}
+
+// your first learining binary search 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void Binary_search(vector<int>ar,int key,int n)
+{
+    int left=0;
+    int right=n-1;
+    int mid;
+
+    while(left<=right)
+    {
+        mid=(left+right)/2;
+
+        if(ar[mid]==key)
+        {
+            cout<<ar[mid]<<" is at "<<mid+1<<" position in this array"<<endl;
+            return;
+        }
+        else if(ar[mid]<key)
+        {
+            left=mid+1;
+        }
+        else
+        {
+            right=mid-1;
+        }
+    }
+   cout<<"-1"<<endl;
+   return;
+
+
+
+}
+
+int main()
+{
+
+    vector<int>ar;
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        int x;
+        cin>>x;
+        ar.push_back(x);
+    }
+    cout<<"enter the value u want to find: "<<endl;
+    int key;
+    cin>>key;
+
+
+    Binary_search(ar,key,n);
+
+    return 0;
+}
+
