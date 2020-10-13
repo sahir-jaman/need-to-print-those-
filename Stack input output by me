@@ -1,0 +1,29 @@
+// stack input output by me 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    stack<int>s;
+    int n;
+    cout<<"Enter how many value u want to put: ";
+    cin>>n;
+    while(n!=0)
+    {
+        int x;
+        cin>>x;
+        s.push(x);
+        n--;
+    }
+
+    while(!s.empty())
+    {
+        cout<<s.top()<<" ";
+        s.pop();
+    }
+
+
+    return 0;
+}
