@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+char s[1000000];
+int main()
+{
+    int cnt=0;
+    cin>>s;
+
+    while(s[1])        // jotokkhon na s-এ null char pawa jabe 
+    {
+        cnt++;
+        int res =0;
+        for(int i=0;s[i]; i++)
+        {
+            res+= s[i] - '0';            // first a 9+9+1 then 1+0 then 1
+        }
+        sprintf(s,"%d",res);      // res এর value ta s এ string akare dukbe etai korse ei function;
+    }
+
+    cout<<cnt;
+
+
+    return 0;
+}
+
+
+i got this code from this link: 
+
+
+https://oscar-algorithm.blogspot.com/2017/12/codeforces-problem-102b-solution-in-c.html
